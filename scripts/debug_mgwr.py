@@ -8,7 +8,7 @@ from mgwr.summary import summaryModel, summaryGLM, summaryGWR
 from os import path
 pd.set_option('display.max_columns', None)
 # %%
-data_dir = path.join('..', 'Data')
+data_dir = path.join('..', 'data')
 # %%
 vision = pd.read_parquet(path.join(data_dir, "vision_providers_minimal.parquet"))
 censusTractok = gpd.read_file(path.join(data_dir, "Oklahoma", "OK Tracts Collect.zip"))

@@ -4,14 +4,14 @@ import geopandas as gpd
 # remove pandas display column limit
 pd.set_option('display.max_columns', None)
 # %%
-test_load = gpd.read_file("../Data/vision_providers_geocoded.gpkg")
+test_load = gpd.read_file("../data/vision_providers_geocoded.gpkg")
 # %%
 # Read in the data
 # read in data 
 # account for  'utf-8' codec can't decode byte 0xd8 in position 63: invalid continuation byte
 # %%
 # convert lat/lon to geometry
-df = pd.read_csv('../Data/vision_providers_geocoded.csv')
+df = pd.read_csv('../data/vision_providers_geocoded.csv')
 # gdf = gpd.GeoDataFrame(
 #     df, geometry=gpd.points_from_xy(df.Longitude, df.Latitude))
 # gdf.crs = {'init': 'epsg:4326'}
