@@ -1,0 +1,6 @@
+pysal
+geopandas 
+pandas
+pyarrow
+matplotlib
+numpy==1.21.6
