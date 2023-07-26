@@ -1,7 +1,7 @@
 import arcpy
 arcpy.ImportToolbox(r"@\Spatial Statistics Tools.tbx")
 arcpy.stats.MGWR(
-    in_features="Census Tract IL",
+    in_features="tl_2020_17_tract",
     dependent_variable="ILcensus_coveragescore.csv.OtherScore",
     model_type="CONTINUOUS",
     explanatory_variables="OPT_IL_Tract_socio_econ_factors_Cook.csv.WhitePerc;OPT_IL_Tract_socio_econ_factors_Cook.csv.Median_household_income;OPT_IL_Tract_socio_econ_factors_Cook.csv.Bach_or_higher_perc",
